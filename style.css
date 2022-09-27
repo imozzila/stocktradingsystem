@@ -69,8 +69,8 @@ body {
   background-color: black;
 }
 
-/* home page */
-.home {
+/* chart */
+.chart {
   background: url(./img/Profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
