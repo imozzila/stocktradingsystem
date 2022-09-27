@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* force scroll bar */
+body {
+  overflow-y: scroll;
+}
+
+/* navbar */
+.navbar {
+  background-color: white;
+}
+
+.navbar img {
+  height: 75px;
+  margin-bottom: 8px;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 28px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-brand:hover {
+  color: #000000;
+}
+
+.nav-link {
+  color: black;
+  width: 100px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid transparent;
+  font-family: 'Exo 2', sans-serif;
+  margin-bottom: 10px;
+}
+
+.nav-link:focus {
+  color: black;
+}
+
+.nav-link:hover, .navbar .active {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+/* button */
+.btn {
+  color: black;
+  border: 3px solid black;
+  width: 115px;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+  background-color: white;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn:hover {
+  color: white;
+  border: 3px solid black;
+  background-color: black;
+}
+
+/* home page */
+.home {
+  background: url(./img/Profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  height: 100vh;
+  width: 100%;
+  padding-top: 32vh;
+}
+
+.links .nav {
+  padding-top: 38px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* font awesome */
+.fab {
+  color: black;
+}
+
+/* responsive */
+@media (max-width: 767.5px) {
+
+  /* navbar */
+  .nav-link {
+    border: transparent;
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .navbar .active::before {
+    font-size: 20px;
+    font-weight: bold;
+    content: '>\00a0\00a0\00a0';
+  }
+
+  .navbar .active::after {
+    font-size: 20px;
+    font-weight: bold;
+    content: '\00a0\00a0\00a0<';
+  }
+
+  .navbar-brand {
+    font-size: 25px;
+  }
+
+  .navbar .navbar-toggler {
+    box-shadow: none;
+    padding-right: 0px;
+  }
+
+  .navbar-toggler.collapsed::after {
+    content: "\00F7";
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    bottom: .1em;
+  }
+
+  .navbar-toggler::after {
+    content: "\00D7";
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    bottom: .1em;
+  }
+}
